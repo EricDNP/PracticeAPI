@@ -82,7 +82,7 @@ namespace PracticeAPI.Services
             return await repo.Exist(id);
         }
 
-        public Task UpdateAsChilds<TEntity>(iEntity entity, Expression<Func<TEntity, object>> entities) where TEntity : class, iEntity
+        public Task UpdateAsChilds<T>(iEntity entity, Expression<Func<T, object>> entities) where T : class, iEntity
         {
             throw new NotImplementedException();
         }
